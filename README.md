@@ -1,5 +1,5 @@
 # Uso di GitHub - Estensione Visual Studio Code
-> Per utilizzare le funzionalità GitHub all'interno di VS-Code, è necessario effettuare l'accesso al proprio profilo GitHub all'interno del programma.
+> Per utilizzare le funzionalità GitHub all'interno di VS-Code, è necessario effettuare l'accesso al proprio profilo GitHub all'interno del programma. Per effettuare l'accesso, vedere il [resto della guida](#accesso-a-github).
 
 <hr/>
 
@@ -26,3 +26,7 @@ Per creare una nuova versione del codice, includendo le modifiche contenute in u
 
 ## Integrazione con Visual Studio Code
 VS-Code permette di lavorare con GitHub nativamente, offrendo tutte le operazioni di gestione delle versioni attraverso la GUI del programma ed evitando la necessità di passare per i comandi da terminale.
+
+### Accesso a GitHub
+Per utilizzare GitHub nell'ambiente di Visual Studio Code, è necessario accedere al proprio profilo:
+* Selezionare il menu *Accounts*
