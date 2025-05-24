@@ -1,6 +1,7 @@
 # Uso di GitHub - Estensione Visual Studio Code
 Guida introduttiva al funzionamento di GitHub e all'utilizzo delle funzioni di gestione delle versioni all'interno di Visual Studio Code
-> Luca Previati (@[LucaPrevi0o](https://github.com/LucaPrevi0o))
+> Author: Luca Previati (@[LucaPrevi0o](https://github.com/LucaPrevi0o))
+>> [!NOTE] Per informazioni aggiuntive su come integrare le funzionalità di GitHub nell'ambiente di lavoro di VS-Code, seguire il [resto della guida](#integrazione-con-visual-studio-code).
 
 <hr/>
 
@@ -15,7 +16,7 @@ Di conseguenza, è presente un **albero** delle versioni, il cui ramo principale
     * è possibile anche creare più commit, uno di seguito all'altro, in maniera da tenere traccia di tutti gli update all'interno del branch di lavoro
 * si esegue il **push** di tutte le modifiche, aggiornando l'albero delle versioni nel repository remoto
 
-> IMPORTANTE: Ogni modifica e commit all'interno di qualsiasi branch è sempre *locale*. Prima dell'operazione di push, tutte le modifiche saranno invisibili ad altri utenti. Per questo motivo, è solitamente consigliabile utilizzare branch separati per ogni utente, evitando conflitti tra le modifiche in fase di push.
+> [!WARNING]: Ogni modifica e commit all'interno di qualsiasi branch è sempre *locale*. Prima dell'operazione di push, tutte le modifiche saranno invisibili ad altri utenti. Per questo motivo, è solitamente consigliabile utilizzare branch separati per ogni utente, evitando conflitti tra le modifiche in fase di push.
 
 Una volta eseguito il push, l'albero delle versioni nel repository remoto avrà registrato la creazione del branch, con tutte le modifiche effettuate. Tuttavia, il ramo <code>main</code> sarà ancora alla versione precedente, poichè le modifiche sono ancora legate ai branch.
 
@@ -40,4 +41,10 @@ Per utilizzare efficacemente GitHub all'interno di VS-Code, è sufficiente segui
 * Continuare progressivamente ad apportare modifiche ai vari file durante la fase di lavoro.
     * Ricordarsi di apportare, periodicamente, alcuni commit intermedi, per spezzare il lavoro in più nodi e creare più sottoversioni distinte.
 * Al termine delle modifiche necessarie, effettuare il push.
-    * Quando non sono presenti modifiche da inserire in un commit, il menu *Source Control* dovrebbe presentare un tasto *Publish Branch*
+    * Quando non sono presenti modifiche da inserire in un commit, il menu *Source Control* dovrebbe presentare un tasto *Publish Branch*.
+    * Cliccando questo pulsante, le modifiche locali sul branch di lavoro vengono sincronizzate nell'albero remoto.
+
+## Creazione della versione
+Una volta creato il branch di modifica, ed effettuato il commit degli aggiornamenti, è necessario eseguire una pull request per aggiornare il <code>main</code>.
+
+Questa operazione è eseguita direttamente attraverso GitHub.
