@@ -29,4 +29,5 @@ VS-Code permette di lavorare con GitHub nativamente, offrendo tutte le operazion
 
 ### Accesso a GitHub
 Per utilizzare GitHub nell'ambiente di Visual Studio Code, è necessario accedere al proprio profilo:
-* Selezionare il menu *Accounts*
+* Aprire il menu *Source Control* attraverso la combinazione di tasti <code>CTRL+SHFT+G | G</code>
+* 
