@@ -1,7 +1,8 @@
 # Uso di GitHub - Estensione Visual Studio Code
 Guida introduttiva al funzionamento di GitHub e all'utilizzo delle funzioni di gestione delle versioni all'interno di Visual Studio Code
 > Author: Luca Previati (@[LucaPrevi0o](https://github.com/LucaPrevi0o))
->> [!NOTE] Per informazioni aggiuntive su come integrare le funzionalità di GitHub nell'ambiente di lavoro di VS-Code, seguire il [resto della guida](#integrazione-con-visual-studio-code).
+>>[!NOTE]
+>>Per informazioni aggiuntive su come integrare le funzionalità di GitHub nell'ambiente di lavoro di VS-Code, seguire il [resto della guida](#integrazione-con-visual-studio-code).
 
 <hr/>
 
@@ -16,7 +17,8 @@ Di conseguenza, è presente un **albero** delle versioni, il cui ramo principale
     * è possibile anche creare più commit, uno di seguito all'altro, in maniera da tenere traccia di tutti gli update all'interno del branch di lavoro
 * si esegue il **push** di tutte le modifiche, aggiornando l'albero delle versioni nel repository remoto
 
-> [!WARNING]: Ogni modifica e commit all'interno di qualsiasi branch è sempre *locale*. Prima dell'operazione di push, tutte le modifiche saranno invisibili ad altri utenti. Per questo motivo, è solitamente consigliabile utilizzare branch separati per ogni utente, evitando conflitti tra le modifiche in fase di push.
+> [!WARNING]
+> Ogni modifica e commit all'interno di qualsiasi branch è sempre *locale*. Prima dell'operazione di push, tutte le modifiche saranno invisibili ad altri utenti. Per questo motivo, è solitamente consigliabile utilizzare branch separati per ogni utente, evitando conflitti tra le modifiche in fase di push.
 
 Una volta eseguito il push, l'albero delle versioni nel repository remoto avrà registrato la creazione del branch, con tutte le modifiche effettuate. Tuttavia, il ramo <code>main</code> sarà ancora alla versione precedente, poichè le modifiche sono ancora legate ai branch.
 
@@ -26,7 +28,8 @@ Per creare una nuova versione del codice, includendo le modifiche contenute in u
 
 ## Integrazione con Visual Studio Code
 Per utilizzare efficacemente GitHub all'interno di VS-Code, è sufficiente seguire questi step:
-> [!NOTE]: Il primo commit di modifica è quello necessario per la creazione del nuovo branch. Da quello successivo, VS-Code registrerà in automatico tutte le modifiche come appartenenti al branch di lavoro.
+> [!IMPORTANT]
+> Il primo commit di modifica è quello necessario per la creazione del nuovo branch. Da quello successivo, VS-Code registrerà in automatico tutte le modifiche come appartenenti al branch di lavoro.
 * Tramite la combinazione di tasti <code>CTRL+SHFT+G | G</code> è possibile aprire il menu *Source Control*, che permette di eseguire tutti i controlli sulle ultime versioni.
     * Il menu dovrebbe presentarsi con un pulsante *Sync Changes*, indicando che sono presenti nuovi update dalla versione locale del <code>main</code>.
     * Premere il tasto *Sync Changes* per sincronizzare la cartella di lavoro locale con l'ultima versione dell'albero.
