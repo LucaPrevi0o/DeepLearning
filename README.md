@@ -1,5 +1,6 @@
 # Uso di GitHub - Estensione Visual Studio Code
-> Per utilizzare le funzionalità GitHub all'interno di VS-Code, è necessario effettuare l'accesso al proprio profilo GitHub all'interno del programma. Per effettuare l'accesso, vedere il [resto della guida](#accesso-a-github).
+Guida introduttiva al funzionamento di GitHub e all'utilizzo delle funzioni di gestione delle versioni all'interno di Visual Studio Code
+> Luca Previati (@[LucaPrevi0o](https://github.com/LucaPrevi0o))
 
 <hr/>
 
@@ -21,3 +22,22 @@ Una volta eseguito il push, l'albero delle versioni nel repository remoto avrà 
 Per creare una nuova versione del codice, includendo le modifiche contenute in un branch, si esegue una **pull request**: con questa operazione, GitHub permette di aprire un'operazione di confronto tra la versione corrente del <code>main</code> e le modifiche contenute nel branch.
 * Se non sono presenti conflitti, GitHub permette di eseguire il **merge** del ramo di modifica, creando un nuovo nodo nel ramo principale e aggiornando la nuova versione del codice.
 * In caso di conflitti (modifiche non confermate, o diverse pull request aperte sulla stessa versione del <code>main</code>), è necessario risolvere tutte le sovrapposizioni, valutando manualmente quali modifiche mantenere e quali scartare.
+
+## Integrazione con Visual Studio Code
+Per utilizzare efficacemente GitHub all'interno di VS-Code, è sufficiente seguire questi step:
+> [!NOTE]: Il primo commit di modifica è quello necessario per la creazione del nuovo branch. Da quello successivo, VS-Code registrerà in automatico tutte le modifiche come appartenenti al branch di lavoro.
+* Tramite la combinazione di tasti <code>CTRL+SHFT+G | G</code> è possibile aprire il menu *Source Control*, che permette di eseguire tutti i controlli sulle ultime versioni.
+    * Il menu dovrebbe presentarsi con un pulsante *Sync Changes*, indicando che sono presenti nuovi update dalla versione locale del <code>main</code>.
+    * Premere il tasto *Sync Changes* per sincronizzare la cartella di lavoro locale con l'ultima versione dell'albero.
+* Creare il branch in cui effettuare il commit delle modifiche.
+    * Dalla barra degli strumenti in basso, dovrebbe essere presente una serie di icone indicanti lo stato di lavoro di GitHub (sulla sinistra).
+    * Tra queste, un'icona dovrebbe presentare anche il nome del branch corrente di lavoro (in questo caso, probabilmente, <code>main</code>).
+    * Cliccando sull'icona, dovrebbe apparire un menu in alto contenente la lista di tutti i branch attualmente presenti nel repository.
+    * Cliccare sul tasto *Create new branch* e inserire il nome.
+* Eseguire la modifica necessaria ai file.
+    * Dal menu *Source Control* si dovrebbe visualizzare una lista di tutti i file contenenti modifiche dalla versione remota nel <code>main</code>.
+    * Inserendo un messaggio di descrizione delle modifiche effettuate, e cliccando il tasto *Commit* sottostante, è possibile inserire un nuovo nodo nel branch di lavoro, contenente tutte le modifiche eseguite.
+* Continuare progressivamente ad apportare modifiche ai vari file durante la fase di lavoro.
+    * Ricordarsi di apportare, periodicamente, alcuni commit intermedi, per spezzare il lavoro in più nodi e creare più sottoversioni distinte.
+* Al termine delle modifiche necessarie, effettuare il push.
+    * Quando non sono presenti modifiche da inserire in un commit, il menu *Source Control* dovrebbe presentare un tasto *Publish Branch*
