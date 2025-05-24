@@ -1,8 +1,9 @@
 # Uso di GitHub - Estensione Visual Studio Code
 Guida introduttiva al funzionamento di GitHub e all'utilizzo delle funzioni di gestione delle versioni all'interno di Visual Studio Code
 > Author: Luca Previati (@[LucaPrevi0o](https://github.com/LucaPrevi0o))
->> [!NOTE]
->> Per informazioni aggiuntive su come integrare le funzionalità di GitHub nell'ambiente di lavoro di VS-Code, seguire il [resto della guida](#integrazione-con-visual-studio-code).
+
+> [!NOTE]
+> Per informazioni aggiuntive su come integrare le funzionalità di GitHub nell'ambiente di lavoro di VS-Code, seguire il [resto della guida](#integrazione-con-visual-studio-code).
 
 <hr/>
 
