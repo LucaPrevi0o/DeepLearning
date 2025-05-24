@@ -20,4 +20,9 @@ Una volta eseguito il push, l'albero delle versioni nel repository remoto avrà 
 
 Per creare una nuova versione del codice, includendo le modifiche contenute in un branch, si esegue una **pull request**: con questa operazione, GitHub permette di aprire un'operazione di confronto tra la versione corrente del <code>main</code> e le modifiche contenute nel branch.
 * Se non sono presenti conflitti, GitHub permette di eseguire il **merge** del ramo di modifica, creando un nuovo nodo nel ramo principale e aggiornando la nuova versione del codice.
-* In caso di conflitti (modifiche non confermate, o diverse pull request aperte sulla stessa versione del <code>main</code>)
+* In caso di conflitti (modifiche non confermate, o diverse pull request aperte sulla stessa versione del <code>main</code>), è necessario risolvere tutte le sovrapposizioni, valutando manualmente quali modifiche mantenere e quali scartare.
+
+<hr/>
+
+## Integrazione con Visual Studio Code
+VS-Code permette di lavorare con GitHub nativamente, offrendo tutte le operazioni di gestione delle versioni attraverso la GUI del programma ed evitando la necessità di passare per i comandi da terminale.
