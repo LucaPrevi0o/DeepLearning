@@ -52,3 +52,12 @@ Per utilizzare efficacemente GitHub all'interno di VS-Code, è sufficiente segui
 Una volta creato il branch di modifica, ed effettuato il commit degli aggiornamenti, è necessario eseguire una pull request per aggiornare il <code>main</code>.
 
 Questa operazione è eseguita direttamente attraverso GitHub.
+* Visualizzando dal browser il branch di modifica appena creato, dovrebbe comparire un messaggio di alert di questo tipo:
+    ```
+    <branch-name> had recent pushes | [Compare & Pull request]
+    ```
+* Cliccando sul pulsante *Compare & Pull request*, si aprirà in automatico la funzionalità di pull.
+    * Inserire un nome per la nuova pull request relativa al branch.
+    * Confermare la richiesta di pull.
+    * Verificare l'assenza di conflitti rispetto alla versione corrente del <code>main</code>.
+    * Confermare il merge delle modifiche, eventualmente eliminando anche il branch.
