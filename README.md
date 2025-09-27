@@ -1,7 +1,3 @@
-Sure! Here's a clear and professional English description for your GitHub project:
-
----
-
 ## 🐚 Abalone Age Classification Using Neural Networks
 
 This project focuses on building a neural network capable of classifying the **age group** of abalones into three categories: **Young**, **MiddleAge**, and **Old**.
